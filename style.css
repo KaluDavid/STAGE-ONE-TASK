@@ -17,17 +17,28 @@ body {
   color: white;
 }
 
-/* DESKTOP VIEW */
+
+
+/* Mobile VIEW */
 
 /* Header */
 header {
   display: flex;
-  /* align-items: flex-start; */
+  align-items: center;
   text-align: right;
   gap: 20px;
   justify-content: flex-end;
   margin: 5% 5% 10% 5%;
+
+  b {
+    padding: 0% 1%;
+    font-size: 29px;
+    font-weight: 400;
+  }
 }
+
+
+
 
 /* main */
 main {
@@ -39,6 +50,8 @@ main {
 
   text-align: center;
 }
+
+
 
 /* Nested Persona Style */
 .persona {
@@ -79,6 +92,12 @@ main {
   }
 }
 
+
+
+
+
+
+
 /* Tech Goals Nested styles*/
 article {
   display: flex;
@@ -113,12 +132,16 @@ article {
     line-height: 40px;
   }
 
+
+
   /* Goals Style */
   section {
     display: flex;
     width: 100%;
     flex-direction: column;
     gap: 5rem;
+
+
 
     /* First and second year goals style */
     div {
@@ -144,7 +167,7 @@ article {
     }
 
     .learn {
-      /* padding-left: 10px; */
+      padding-left: 20px;
 
       padding-bottom: 15px;
       li {
@@ -153,6 +176,8 @@ article {
     }
   }
 }
+
+
 
 /* Footer Style*/
 footer {
@@ -189,6 +214,9 @@ footer {
   }
 }
 
+
+
+
 /* DESKTOP VIEW */
 
 /* screen 732 */
@@ -215,6 +243,8 @@ footer {
   }
 }
 
+
+
 /* screen 1024px */
 @media screen and (min-width: 1024px) {
   main {
@@ -239,6 +269,9 @@ footer {
   }
 }
 
+
+
+
 /* screen 1030px */
 @media screen and (min-width: 1030px) {
   .persona {
@@ -260,6 +293,10 @@ footer {
     }
   }
 }
+
+
+
+
 
 /* screen 1270px */
 @media screen and (min-width: 1270px) {
