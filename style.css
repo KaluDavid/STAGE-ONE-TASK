@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ojuju:wght@200..800&family=Playwrite+ES+Deco:wght@100..400&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0f0f0f;
+  background-image: url(https://josephkalu.com/wp-content/uploads/2022/05/Group-18.png);
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+/* DESKTOP VIEW */
+
+/* Header */
+header {
+  display: flex;
+  /* align-items: flex-start; */
+  text-align: right;
+  gap: 20px;
+justify-content: flex-end;
+  margin: 5% 5% 10% 5%;
+}
+
+/* main */
+main {
+  margin: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+  overflow-x: hidden;
+
+  text-align: center;
+}
+
+/* Nested Persona Style */
+.persona {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  line-height: 25px;
+  /* Persona Img */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Person div style */
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    small {
+      text-align: right;
+    }
+
+    h2 {
+      font-family: "Ojuju", sans-serif;
+      font-size: 34px;
+      line-height: 50px;
+      background: #121fcf;
+      background: linear-gradient(to right, #121fcf 0%, #cf1512 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    h1 {
+      font-size: 18px;
+    }
+  }
+}
+
+/* Tech Goals Nested styles*/
+article {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  .tech-goals {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+
+    p {
+      line-height: 25px;
+    }
+  }
+
+  h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+
+  h3,
+  h2 {
+    font-family: "Playwrite ES Deco", cursive;
+    font-weight: 600;
+  }
+
+  h3 {
+    font-size: 18px;
+    line-height: 40px;
+  }
+
+  /* Goals Style */
+  section {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 5rem;
+
+    /* First and second year goals style */
+    div {
+      background-color: black;
+      border: 2px solid aqua;
+      border-radius: 20px 0px;
+      padding: 7% 7% 7% 15%;
+    }
+
+    div:hover {
+      border: 2px solid blue;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      text-align: left;
+    }
+
+    li {
+      line-height: 35px;
+    }
+
+    .learn {
+      /* padding-left: 10px; */
+
+      padding-bottom: 15px;
+      li {
+        list-style-type: square;
+      }
+    }
+  }
+}
+
+/* Footer Style*/
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: 5% 0;
+  text-align: center;
+  gap: 20px;
+  width: 100%;
+  overflow-x: hidden;
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  .link {
+    padding: 5% 3%;
+
+    b {
+      padding: 0% 1%;
+      font-size: 29px;
+      font-weight: 400;
+    }
+  }
+
+  p {
+    padding-top: 4%;
+    font-family: "Playwrite ES Deco", cursive;
+  }
+  hr {
+    border: 1px solid aqua;
+  }
+}
+
+/* DESKTOP VIEW */
+
+/* screen 732 */
+@media screen and (min-width: 732px) {
+  .persona {
+    div {
+      h2 {
+        font-size: 50px;
+        line-height: 90px;
+      }
+    }
+  }
+
+  article {
+    section {
+      div {
+        padding: 7% 8%;
+      }
+
+      .learn {
+        padding-left: 30px;
+      }
+    }
+  }
+}
+
+/* screen 1024px */
+@media screen and (min-width: 1024px) {
+  main {
+    gap: 10rem;
+  }
+
+  article {
+    h2 {
+      font-size: 30px;
+    }
+
+    section {
+      flex-direction: row;
+
+      div {
+        width: 50%;
+      }
+      h3 {
+        line-height: 80px;
+      }
+    }
+  }
+}
+
+/* screen 1030px */
+@media screen and (min-width: 1030px) {
+  .persona {
+    gap: 3rem;
+    text-align: left;
+    flex-direction: row;
+
+    div {
+      h2 {
+        font-size: 40px;
+        line-height: 50px;
+      }
+    }
+  }
+
+  article {
+    h2 {
+      font-size: 30px;
+    }
+  }
+}
+
+/* screen 1270px */
+@media screen and (min-width: 1270px) {
+  .persona {
+    font-size: 20px;
+    div {
+      h2 {
+        font-size: 60px;
+        line-height: 90px;
+      }
+    }
+  }
+
+  article {
+    font-size: 20px;
+
+    h2 {
+      font-size: 30px;
+    }
+
+    h3 {
+      font-size: 25px;
+    }
+  }
+}
